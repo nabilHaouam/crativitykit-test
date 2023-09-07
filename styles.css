@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/ClashDisplay-Variable.ttf') format('truetype'); /* .ttf format */
+  }
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 16px 65px;
+    background: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+nav img {
+    width: 180px;
+    cursor: pointer;
+}
+.nav_links{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    color: rgba(255, 255, 255, .6);
+    margin-right: 10%;
+    cursor: pointer;
+   
+}
+.nav_link:hover{
+    color: rgb(255, 255, 255);
+}
+.join_span{
+    color: rgb(143, 228, 213);
+
+}
+.nav_join_button{
+    padding: 12px 40px;
+    border: solid 1px rgb(143, 228, 213);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.nav_join_button:hover {
+    box-shadow: 0 0 3px 2px rgba(143, 228, 213, 0.5); 
+  }
+.hero{
+    width: 100vw;
+    position: relative;
+}
+.hero_text{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Clash Display';
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.hero video{
+    width: 100%;
+    height: 87vh;
+    object-fit: cover;
+}
+.blue_hero_text{
+    color: rgb(143, 228, 213);
+}
+.gradient-wrapper{
+    position: relative;
+}
+.gradient{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.83) 58%, rgb(0, 0, 0) 87%);
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.get_ready_section{
+    position: relative;
+}
+.matrix_backgrounds{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+   
+}
+.left_cube{
+    position: absolute;
+    left: 10vw;
+    top: 38px;
+    transform: translate3d(0px, 16px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(27deg) skew(0deg); 
+    transform-style: preserve-3d;
+    opacity: 0.1;
+}
+.right_cube{
+    position: absolute;
+    right: 10vw;
+    bottom: 38px;
+    transform: translate3d(0px, 16px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-27deg) skew(0deg); 
+    transform-style: preserve-3d;
+    opacity: 0.1;
+}
+.dates{
+    font-family: 'Clash Display', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.date{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgba(143, 228, 213, 0.5);
+}
+.get_ready_text{
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+.blue_text{
+    color: rgb(143, 228, 213);
+}
+.countdown{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+.countdown_time{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+.countdown_detail{
+    margin-top: 15px;
+    color: rgba(255, 255, 255, .6);
+    font-family: 'Clash Display', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+.watch_video_join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    background: rgb(0, 0, 0);
+
+}
+
+.watch_video_text{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.watch_video_text img{
+    width: 24px;
+    height: 24px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+.thumbnail{
+    max-width: 767px;
+    border: rgb(143, 228, 213);
+    border-radius: 10px;
+}
+.watch_video_join_button{
+    padding: 16px 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: solid 1px rgb(143, 228, 213);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+.join_text{
+    color: rgb(143, 228, 213);
+}
+.watch_video_join_button:hover{
+    box-shadow: 0 0 32px 4px #233834;
+}
+
+
+
+
+
+
+
